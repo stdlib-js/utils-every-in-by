@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/utils-every-in-by/tags). For example,
+
+```javascript
 import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@v0.1.0-esm/index.mjs';
 ```
 
@@ -107,7 +112,7 @@ var bool = everyInBy( {}, isPositive );
 <script type="module">
 
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@v0.1.0-esm/index.mjs';
+import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@esm/index.mjs';
 
 var bool;
 var o;
