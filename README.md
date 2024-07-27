@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@deno/mod.js';
+import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@v0.1.1-deno/mod.js';
 ```
 
 #### everyInBy( object, predicate\[, thisArg ] )
@@ -102,7 +102,7 @@ var bool = everyInBy( {}, isPositive );
 
 ```javascript
 import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@deno/mod.js';
-import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@deno/mod.js';
+import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@v0.1.1-deno/mod.js';
 
 var bool;
 var o;
