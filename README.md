@@ -98,7 +98,7 @@ bool = everyInBy( o, isPositive );
 If provided an empty `object`, the function returns `true`.
 
 ```javascript
-function isPositive(v) {
+function isPositive( v ) {
     return ( v > 0 );
 }
 
@@ -126,7 +126,7 @@ var bool;
 var o;
 var i;
 
-function isPositive(v) {
+function isPositive( v ) {
     return ( v > 0 );
 }
 
