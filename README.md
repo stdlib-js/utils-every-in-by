@@ -45,14 +45,32 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/utils-every-in-by
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm`][esm-url] branch (see [README][esm-readme]).
+-   If you are using Deno, visit the [`deno`][deno-url] branch (see [README][deno-readme] for usage intructions).
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd`][umd-url] branch (see [README][umd-readme]).
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+To view installation and usage instructions specific to each branch build, be sure to explicitly navigate to the respective README files on each branch, as linked to above.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
 ```javascript
-import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@esm/index.mjs';
+var everyInBy = require( '@stdlib/utils-every-in-by' );
 ```
 
 #### everyInBy( object, predicate\[, thisArg ] )
@@ -80,7 +98,7 @@ bool = everyInBy( o, isPositive );
 If provided an empty `object`, the function returns `true`.
 
 ```javascript
-function isPositive(v) {
+function isPositive( v ) {
     return ( v > 0 );
 }
 
@@ -100,20 +118,15 @@ var bool = everyInBy( {}, isPositive );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="module">
-
-import randu from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-randu@esm/index.mjs';
-import everyInBy from 'https://cdn.jsdelivr.net/gh/stdlib-js/utils-every-in-by@esm/index.mjs';
+```javascript
+var randu = require( '@stdlib/random-base-randu' );
+var everyInBy = require( '@stdlib/utils-every-in-by' );
 
 var bool;
 var o;
 var i;
 
-function isPositive(v) {
+function isPositive( v ) {
     return ( v > 0 );
 }
 
@@ -124,10 +137,6 @@ for ( i = 0; i < 100; i++ ) {
 
 bool = everyInBy( o, isPositive );
 // returns <boolean>
-
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -148,15 +157,15 @@ bool = everyInBy( o, isPositive );
 
 <!-- <related-links> -->
 
-[@stdlib/utils/any-in-by]: https://github.com/stdlib-js/utils-any-in-by/tree/esm
+[@stdlib/utils/any-in-by]: https://github.com/stdlib-js/utils-any-in-by
 
-[@stdlib/utils/none-in-by]: https://github.com/stdlib-js/utils-none-in-by/tree/esm
+[@stdlib/utils/none-in-by]: https://github.com/stdlib-js/utils-none-in-by
 
-[@stdlib/utils/some-in-by]: https://github.com/stdlib-js/utils-some-in-by/tree/esm
+[@stdlib/utils/some-in-by]: https://github.com/stdlib-js/utils-some-in-by
 
-[@stdlib/utils/every-by]: https://github.com/stdlib-js/utils-every-by/tree/esm
+[@stdlib/utils/every-by]: https://github.com/stdlib-js/utils-every-by
 
-[@stdlib/utils/every-own-by]: https://github.com/stdlib-js/utils-every-own-by/tree/esm
+[@stdlib/utils/every-own-by]: https://github.com/stdlib-js/utils-every-own-by
 
 <!-- </related-links> -->
 
@@ -170,7 +179,7 @@ bool = everyInBy( o, isPositive );
 
 ## Notice
 
-This package is part of [stdlib][stdlib], a standard library with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
+This package is part of [stdlib][stdlib], a standard library for JavaScript and Node.js, with an emphasis on numerical and scientific computing. The library provides a collection of robust, high performance libraries for mathematics, statistics, streams, utilities, and more.
 
 For more information on the project, filing bug reports and feature requests, and guidance on how to develop [stdlib][stdlib], see the main project [repository][stdlib].
 
